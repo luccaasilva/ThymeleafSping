@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset = "ISO-8859-1">
+    <title>Hola que tal</title>
+</head>
+<body>
+<p>pene</p>
+<table>
+    <tr th:each="persona:${lista}">
+        <td th:text="${persona.getNombre()}"></td>
+        <td th:text="${persona.getApellidos()}"></td>
+        <td th:text="${persona.getEdad()}"></td>
+    </tr>
+</table>
+</body>
+</html>
